@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dom Manipulation</title>
+  <link rel="stylesheet" type="text/css" href="../styles/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="../index.js.html" class="active">Home</a>
+  <a href="../topics/topic-ajax.html">Ajax</a>
+  <a href="../topics/topic-basics.html">Basics</a>
+  <a href="../topics/topic-classes.html">Classes</a>
+  <a href="../topics/topic-json.html">JSON</a>
+  <a href="../topics/topic-local-storage.html">Local Storage</a>
+  <a href="../topics/topic-dom-manipulation.html">Dom Manipulation</a>
+  <a href="javascript:void(0);" class="icon" onclick="openNav()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<h1> Manipulation Using createElement, appendChild, insertBefore, removeChild, etc</h1>
+
+<div>
+  <label>Insert Item:</label><input type="text" id="item">
+  <button onclick="appendChildTest()">Add Item</button>
+  <button onclick="insertBeforeTest()">Insert Before</button>
+  <button onclick="removeChildTest()">Remove Item</button>
+  <button onclick="replaceChildTest()">Replace</button>
+</div>
+
+<ul id="list"></ul>
+
+
+
+</body>
+<script src="../scripts/menu.js"></script>
+<script src="../scripts/dom-manipulation.js"></script>
+</html>

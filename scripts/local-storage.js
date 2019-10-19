@@ -19,7 +19,7 @@ function getLocalStorage() {
 
   document.getElementById('getName').innerHTML = window.localStorage.getItem('name');
 
-  const employee = JSON.parse(window.localStorage.getItem('employee'))
+  const employee = JSON.parse(window.localStorage.getItem('employee'));
 
   document.getElementById('employeeName').innerHTML = employee.name;
   document.getElementById('employeePosition').innerHTML = employee.position;
