@@ -1,3 +1,4 @@
+
 function transform() {
   const box = document.getElementsByClassName("box")[0];
   box.classList.add("box-change");
@@ -22,4 +23,11 @@ function changeColor() {
   elem.style.backgroundColor = '#DAF7A6';
   elem.style.height = '30px';
   elem.style.width = '100px';
+}
+
+function changeSquare() {
+  const elem = document.getElementById("square");
+  const btn = document.getElementById("showHideButton");
+  elem.style.visibility = elem.style.visibility === "hidden" ? "visible" : "hidden";
+  btn.innerText = elem.style.visibility === "hidden" ? "Show Box" : "Hide Box";
 }
