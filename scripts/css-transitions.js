@@ -1,4 +1,4 @@
-
+let degree = 0;
 function transform() {
   const box = document.getElementsByClassName("box")[0];
   box.classList.add("box-change");
@@ -16,6 +16,7 @@ function myMove() {
       elem.style.left = pos + 'px';
     }
   }
+
 }
 
 function changeColor() {
@@ -30,4 +31,10 @@ function changeSquare() {
   const btn = document.getElementById("showHideButton");
   elem.style.visibility = elem.style.visibility === "hidden" ? "visible" : "hidden";
   btn.innerText = elem.style.visibility === "hidden" ? "Show Box" : "Hide Box";
+}
+
+function rotate() {
+  const elem = document.getElementById("rectangle");
+  elem.style.transform = "rotate(" + (degree += 90) + "deg)"
+
 }
