@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Events</title>
+    <link rel="stylesheet" type="text/css" href="../styles/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+    <div class="topnav" id="myTopnav">
+        <a href="../index.js.html" class="active">Home</a>
+        <a href="../topics/topic-ajax.html">Ajax</a>
+        <a href="../topics/topic-basics.html">Basics</a>
+        <a href="../topics/topic-classes.html">Classes</a>
+        <a href="../topics/topic-json.html">JSON</a>
+        <a href="../topics/topic-local-storage.html">Local Storage</a>
+        <a href="../topics/topic-javascript-events.html">Javascript Events</a>
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</header>
+<button onclick="showNewItem()" class="button-primary">Show Text</button>
+<div id="helloWorld"></div>
+<label>Enter Your Favorite Food: </label>
+<input id="food" onfocus="changeOutlineColor()" />
+<label>Enter Text: </label>
+<input id="paragraph" type="text" value="Hello" onchange="changing(this.value)" />
+<div id="text"></div>
+
+
+
+</body>
+<script src="../scripts/menu.js"></script>
+<script src="../scripts/javascript-events.js"></script>
+</html>
