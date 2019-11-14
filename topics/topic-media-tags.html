@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Media Tags</title>
+  <link rel="stylesheet" type="text/css" href="../styles/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+  <div class="topnav" id="myTopnav">
+    <a href="../index.js.html" class="active">Home</a>
+    <a href="../topics/topic-ajax.html">Ajax</a>
+    <a href="../topics/topic-basics.html">Basics</a>
+    <a href="../topics/topic-classes.html">Classes</a>
+    <a href="../topics/topic-json.html">JSON</a>
+    <a href="../topics/topic-local-storage.html">Local Storage</a>
+    <a href="../topics/topic-media-tags.html">Media Tags</a>
+    <a href="javascript:void(0);" class="icon" onclick="openNav()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</header>
+<h1>HTML 5 Media Tags</h1>
+
+<!--This html 5 tag is for videos, you can define the size and add in controls-->
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<!--This HTML5 tag allow you to add audio in your web page, you can put in the source and add controls, you do not need to define size-->
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<!--canvas allows you to draw-->
+<canvas id="myCanvas" width="200" height="100"></canvas>
+
+
+
+
+</body>
+<script src="../scripts/menu.js"></script>
+<script src="../scripts/media-tags.js"></script>
+</html>
